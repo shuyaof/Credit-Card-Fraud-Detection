@@ -20,7 +20,6 @@
 
 
 Think Harder!!!
-
-Felonious Punks
-
-
+- SkimSkam
+- Kleptomaniacs - definition an impulse control disorder that results in an irresistible urge to steal!!! 
+:credit_card:
