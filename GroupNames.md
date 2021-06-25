@@ -20,13 +20,6 @@
 
 
 Think Harder!!!
-
-Felonious Punks
-
-<<<<<<< HEAD
-final name for Slack is....
-
-cleptomanics!
-=======
-
->>>>>>> 92944f508a2ea3e379cfca5cfe2bd12bafd56333
+- SkimSkam
+- Kleptomaniacs - definition an impulse control disorder that results in an irresistible urge to steal!!! 
+:credit_card:
