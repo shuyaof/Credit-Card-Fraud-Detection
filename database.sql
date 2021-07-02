@@ -1,4 +1,4 @@
-CREATE TABLE ccf2020(
+CREATE TABLE ccf(
 	user_ int,
 	card int,
 	year_ int,
@@ -16,4 +16,4 @@ CREATE TABLE ccf2020(
 	is_fraud varchar
 	);
 	
-	SELECT * FROM ccf2020
+	SELECT * FROM ccf
