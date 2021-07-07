@@ -4,3 +4,4 @@
 💸
 Jay is the best
 Jay is the best 🍺
+Jay is the best 🍻
