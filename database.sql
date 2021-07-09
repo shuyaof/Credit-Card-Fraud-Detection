@@ -15,8 +15,10 @@ CREATE TABLE ccf(
 	errors varchar,
 	is_fraud varchar
 	);
+ALTER TABLE ccf
+ADD COLUMN id SERIAL PRIMARY KEY;	
 	
 ALTER TABLE ccf
 ADD COLUMN id SERIAL PRIMARY KEY;
-	
+
 SELECT * FROM ccf
