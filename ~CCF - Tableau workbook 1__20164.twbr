@@ -1,0 +1,1301 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20212.21.0605.1023                               -->
+<workbook source-build='2021.2.0 (20212.21.0605.1023)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Output_df' inline='true' name='federated.0j4x9yv0le2tw5135jbby1wehjt5' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Output_df' name='textscan.0tc0c3q1vwpl3s163uv8w1wiv0r5'>
+            <connection class='textscan' directory='C:/Users/phili/Phil School/Bootcamp/Mod_20_Project USE THIS ONE/Credit-Card-/holding for Git hub/Credit-Card-Fraud-Detection-main/Credit-Card-Fraud-Detection-main' filename='Output_df.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0tc0c3q1vwpl3s163uv8w1wiv0r5' name='Output_df.csv' table='[Output_df#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='IsFraud?' ordinal='1' />
+            <column datatype='real' name='Amount' ordinal='2' />
+            <column datatype='integer' name='Card' ordinal='3' />
+            <column datatype='integer' name='Year' ordinal='4' />
+            <column datatype='integer' name='Month' ordinal='5' />
+            <column datatype='integer' name='Day' ordinal='6' />
+            <column datatype='integer' name='MCC' ordinal='7' />
+            <column datatype='integer' name='Chip Transaction' ordinal='8' />
+            <column datatype='integer' name='Online Transaction' ordinal='9' />
+            <column datatype='integer' name='Swipe Transaction' ordinal='10' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0tc0c3q1vwpl3s163uv8w1wiv0r5' name='Output_df.csv' table='[Output_df#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='IsFraud?' ordinal='1' />
+            <column datatype='real' name='Amount' ordinal='2' />
+            <column datatype='integer' name='Card' ordinal='3' />
+            <column datatype='integer' name='Year' ordinal='4' />
+            <column datatype='integer' name='Month' ordinal='5' />
+            <column datatype='integer' name='Day' ordinal='6' />
+            <column datatype='integer' name='MCC' ordinal='7' />
+            <column datatype='integer' name='Chip Transaction' ordinal='8' />
+            <column datatype='integer' name='Online Transaction' ordinal='9' />
+            <column datatype='integer' name='Swipe Transaction' ordinal='10' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Output_df.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[Output_df.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Output_df.csv_0BBFD47877024477B7C5537D85B31F06]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IsFraud?</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[IsFraud?]</local-name>
+            <parent-name>[Output_df.csv]</parent-name>
+            <remote-alias>IsFraud?</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Output_df.csv_0BBFD47877024477B7C5537D85B31F06]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Amount]</local-name>
+            <parent-name>[Output_df.csv]</parent-name>
+            <remote-alias>Amount</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Output_df.csv_0BBFD47877024477B7C5537D85B31F06]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Card</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Card]</local-name>
+            <parent-name>[Output_df.csv]</parent-name>
+            <remote-alias>Card</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Output_df.csv_0BBFD47877024477B7C5537D85B31F06]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Output_df.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Output_df.csv_0BBFD47877024477B7C5537D85B31F06]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Month]</local-name>
+            <parent-name>[Output_df.csv]</parent-name>
+            <remote-alias>Month</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Output_df.csv_0BBFD47877024477B7C5537D85B31F06]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Day</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Day]</local-name>
+            <parent-name>[Output_df.csv]</parent-name>
+            <remote-alias>Day</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Output_df.csv_0BBFD47877024477B7C5537D85B31F06]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MCC</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MCC]</local-name>
+            <parent-name>[Output_df.csv]</parent-name>
+            <remote-alias>MCC</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Output_df.csv_0BBFD47877024477B7C5537D85B31F06]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Chip Transaction</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Chip Transaction]</local-name>
+            <parent-name>[Output_df.csv]</parent-name>
+            <remote-alias>Chip Transaction</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Output_df.csv_0BBFD47877024477B7C5537D85B31F06]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Online Transaction</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Online Transaction]</local-name>
+            <parent-name>[Output_df.csv]</parent-name>
+            <remote-alias>Online Transaction</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Output_df.csv_0BBFD47877024477B7C5537D85B31F06]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Swipe Transaction</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Swipe Transaction]</local-name>
+            <parent-name>[Output_df.csv]</parent-name>
+            <remote-alias>Swipe Transaction</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Output_df.csv_0BBFD47877024477B7C5537D85B31F06]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Calc1_Trxn size bins' datatype='string' name='[Calculation_1418915423636598784]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='if [Amount]&gt;0 and [Amount]&lt;=0 then &quot;Returns&quot;&#13;&#10;&#13;&#10;elseif [Amount]&gt;1 and  [Amount]&lt;=100 then &quot;Bin 1&quot;&#13;&#10;&#13;&#10;elseif [Amount]&gt;100 and  [Amount]&lt;=500 then &quot;Bin 2&quot;&#13;&#10;&#13;&#10;elseif [Amount]&gt;500 and  [Amount]&lt;=1000 then &quot;Bin 3&quot;&#13;&#10;&#13;&#10;elseif [Amount]&gt;1000 and  [Amount]&lt;=10000 then &quot;Bin 4&quot;&#13;&#10;&#13;&#10;END' />
+        <aliases>
+          <alias key='%null%' value='Returns' />
+          <alias key='&quot;Bin 1&quot;' value='&lt;$100' />
+          <alias key='&quot;Bin 2&quot;' value='$100- $500' />
+          <alias key='&quot;Bin 3&quot;' value='$500- $1000' />
+          <alias key='&quot;Bin 4&quot;' value='Over $1000' />
+        </aliases>
+      </column>
+      <column caption='Calc2_Chip Type' datatype='string' name='[Calculation_1418915423644798977]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='if [Chip Transaction] =0 then &quot;0&quot;&#13;&#10;&#13;&#10;elseif [Online Transaction]=0 then &quot;1&quot;&#13;&#10;&#13;&#10;elseif [Swipe Transaction]= 0 then &quot;2&quot;&#13;&#10;END' />
+      </column>
+      <column aggregation='Sum' datatype='integer' name='[Card]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Day]' role='dimension' type='quantitative' />
+      <column aggregation='Sum' datatype='integer' name='[MCC]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Month]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Output_df.csv' datatype='table' name='[__tableau_internal_object_id__].[Output_df.csv_0BBFD47877024477B7C5537D85B31F06]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/phili/OneDrive/Documents/My Tableau Repository/Datasources/Output_df.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Output_df.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>30287420</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>IsFraud?</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[IsFraud?]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>IsFraud?</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Output_df.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Amount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Amount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Amount</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Output_df.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>66229</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Card</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Card]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Card</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Output_df.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Output_df.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Month</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Month</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Output_df.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Day</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Day]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Day</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Output_df.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MCC</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[MCC]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MCC</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Output_df.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>109</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Chip Transaction</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Chip Transaction]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Chip Transaction</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Output_df.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Online Transaction</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Online Transaction]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Online Transaction</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Output_df.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Swipe Transaction</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Swipe Transaction]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Swipe Transaction</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Output_df.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Output_df.csv' id='Output_df.csv_0BBFD47877024477B7C5537D85B31F06'>
+            <properties context=''>
+              <relation connection='textscan.0tc0c3q1vwpl3s163uv8w1wiv0r5' name='Output_df.csv' table='[Output_df#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='IsFraud?' ordinal='1' />
+                  <column datatype='real' name='Amount' ordinal='2' />
+                  <column datatype='integer' name='Card' ordinal='3' />
+                  <column datatype='integer' name='Year' ordinal='4' />
+                  <column datatype='integer' name='Month' ordinal='5' />
+                  <column datatype='integer' name='Day' ordinal='6' />
+                  <column datatype='integer' name='MCC' ordinal='7' />
+                  <column datatype='integer' name='Chip Transaction' ordinal='8' />
+                  <column datatype='integer' name='Online Transaction' ordinal='9' />
+                  <column datatype='integer' name='Swipe Transaction' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Chip Trxn Type'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Output_df' name='federated.0j4x9yv0le2tw5135jbby1wehjt5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0j4x9yv0le2tw5135jbby1wehjt5'>
+            <column caption='Calc2_Chip Type' datatype='string' name='[Calculation_1418915423644798977]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='if [Chip Transaction] =0 then &quot;0&quot;&#13;&#10;&#13;&#10;elseif [Online Transaction]=0 then &quot;1&quot;&#13;&#10;&#13;&#10;elseif [Swipe Transaction]= 0 then &quot;2&quot;&#13;&#10;END' />
+            </column>
+            <column datatype='integer' name='[Chip Transaction]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Online Transaction]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Swipe Transaction]' role='measure' type='quantitative' />
+            <_.fcp.ObjectModelTableType.false...column caption='Output_df.csv' datatype='integer' name='[__tableau_internal_object_id__].[Output_df.csv_0BBFD47877024477B7C5537D85B31F06]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='Output_df.csv' datatype='table' name='[__tableau_internal_object_id__].[Output_df.csv_0BBFD47877024477B7C5537D85B31F06]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Output_df.csv_0BBFD47877024477B7C5537D85B31F06]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Output_df.csv_0BBFD47877024477B7C5537D85B31F06:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1418915423644798977]' derivation='None' name='[none:Calculation_1418915423644798977:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.0j4x9yv0le2tw5135jbby1wehjt5].[none:Calculation_1418915423644798977:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0j4x9yv0le2tw5135jbby1wehjt5].[__tableau_internal_object_id__].[cnt:Output_df.csv_0BBFD47877024477B7C5537D85B31F06:qk]</rows>
+        <cols>[federated.0j4x9yv0le2tw5135jbby1wehjt5].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{6BC3E4EA-D68A-46E6-BDB0-48C754EDC5A7}' />
+    </worksheet>
+    <worksheet name='Fraud Bins'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Output_df' name='federated.0j4x9yv0le2tw5135jbby1wehjt5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0j4x9yv0le2tw5135jbby1wehjt5'>
+            <column datatype='real' name='[Amount]' role='measure' type='quantitative' />
+            <column caption='Calc1_Trxn size bins' datatype='string' name='[Calculation_1418915423636598784]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='if [Amount]&gt;0 and [Amount]&lt;=0 then &quot;Returns&quot;&#13;&#10;&#13;&#10;elseif [Amount]&gt;1 and  [Amount]&lt;=100 then &quot;Bin 1&quot;&#13;&#10;&#13;&#10;elseif [Amount]&gt;100 and  [Amount]&lt;=500 then &quot;Bin 2&quot;&#13;&#10;&#13;&#10;elseif [Amount]&gt;500 and  [Amount]&lt;=1000 then &quot;Bin 3&quot;&#13;&#10;&#13;&#10;elseif [Amount]&gt;1000 and  [Amount]&lt;=10000 then &quot;Bin 4&quot;&#13;&#10;&#13;&#10;END' />
+              <aliases>
+                <alias key='%null%' value='Returns' />
+                <alias key='&quot;Bin 1&quot;' value='&lt;$100' />
+                <alias key='&quot;Bin 2&quot;' value='$100- $500' />
+                <alias key='&quot;Bin 3&quot;' value='$500- $1000' />
+                <alias key='&quot;Bin 4&quot;' value='Over $1000' />
+              </aliases>
+            </column>
+            <column datatype='integer' name='[IsFraud?]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1418915423636598784]' derivation='None' name='[none:Calculation_1418915423636598784:nk]' pivot='key' type='nominal' />
+            <column-instance column='[IsFraud?]' derivation='Sum' name='[sum:IsFraud?:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f17b79' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0j4x9yv0le2tw5135jbby1wehjt5].[sum:IsFraud?:qk]</rows>
+        <cols>[federated.0j4x9yv0le2tw5135jbby1wehjt5].[none:Calculation_1418915423636598784:nk]</cols>
+      </table>
+      <simple-id uuid='{1F51F16B-AEA4-49EA-A240-E5C9168A61AC}' />
+    </worksheet>
+    <worksheet name='Fraud by Card'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Output_df' name='federated.0j4x9yv0le2tw5135jbby1wehjt5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0j4x9yv0le2tw5135jbby1wehjt5'>
+            <column aggregation='Sum' datatype='integer' name='[Card]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[IsFraud?]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Card]' derivation='None' name='[none:Card:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[IsFraud?]' derivation='Sum' name='[sum:IsFraud?:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0j4x9yv0le2tw5135jbby1wehjt5].[sum:IsFraud?:qk]' scope='rows' value='Fraud Count' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.0j4x9yv0le2tw5135jbby1wehjt5].[none:Card:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0j4x9yv0le2tw5135jbby1wehjt5].[sum:IsFraud?:qk]</rows>
+        <cols>[federated.0j4x9yv0le2tw5135jbby1wehjt5].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{FCB57C61-9F28-4EA7-A683-C82E1CF8EBE9}' />
+    </worksheet>
+    <worksheet name='Fraud by Card Type'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Output_df' name='federated.0j4x9yv0le2tw5135jbby1wehjt5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0j4x9yv0le2tw5135jbby1wehjt5'>
+            <column aggregation='Sum' datatype='integer' name='[Card]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[IsFraud?]' role='measure' type='quantitative' />
+            <column-instance column='[Card]' derivation='None' name='[none:Card:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[IsFraud?]' derivation='Sum' name='[sum:IsFraud?:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0j4x9yv0le2tw5135jbby1wehjt5].[sum:IsFraud?:qk]</rows>
+        <cols>[federated.0j4x9yv0le2tw5135jbby1wehjt5].[none:Card:ok]</cols>
+      </table>
+      <simple-id uuid='{19814943-447D-44B8-914F-88368FABF212}' />
+    </worksheet>
+    <worksheet name='Fraud over Time'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Output_df' name='federated.0j4x9yv0le2tw5135jbby1wehjt5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0j4x9yv0le2tw5135jbby1wehjt5'>
+            <column datatype='integer' name='[IsFraud?]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Month]' role='dimension' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[IsFraud?]' derivation='Count' name='[cnt:IsFraud?:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Month]' derivation='None' name='[none:Month:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[IsFraud?]' derivation='Sum' name='[sum:IsFraud?:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0j4x9yv0le2tw5135jbby1wehjt5].[cnt:IsFraud?:qk]' scope='rows' value='Transaction Counts' />
+            <format attr='title' class='0' field='[federated.0j4x9yv0le2tw5135jbby1wehjt5].[sum:IsFraud?:qk]' scope='rows' value='Fraud Counts' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0j4x9yv0le2tw5135jbby1wehjt5].[cnt:IsFraud?:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='255' />
+                <format attr='mark-color' value='#76b7b2' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0j4x9yv0le2tw5135jbby1wehjt5].[sum:IsFraud?:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>([federated.0j4x9yv0le2tw5135jbby1wehjt5].[cnt:IsFraud?:qk] + [federated.0j4x9yv0le2tw5135jbby1wehjt5].[sum:IsFraud?:qk])</rows>
+        <cols>([federated.0j4x9yv0le2tw5135jbby1wehjt5].[none:Year:qk] + [federated.0j4x9yv0le2tw5135jbby1wehjt5].[none:Month:qk])</cols>
+      </table>
+      <simple-id uuid='{42A43765-3C80-4F03-AB5E-909D5466CE31}' />
+    </worksheet>
+    <worksheet name='MCC Fraud'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Output_df' name='federated.0j4x9yv0le2tw5135jbby1wehjt5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0j4x9yv0le2tw5135jbby1wehjt5'>
+            <column datatype='integer' name='[IsFraud?]' role='measure' type='quantitative' />
+            <column aggregation='Sum' datatype='integer' name='[MCC]' role='dimension' type='ordinal' />
+            <column-instance column='[MCC]' derivation='None' name='[none:MCC:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[IsFraud?]' derivation='Sum' name='[sum:IsFraud?:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0j4x9yv0le2tw5135jbby1wehjt5].[sum:IsFraud?:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0j4x9yv0le2tw5135jbby1wehjt5].[sum:IsFraud?:qk]' />
+              <color column='[federated.0j4x9yv0le2tw5135jbby1wehjt5].[sum:IsFraud?:qk]' />
+              <text column='[federated.0j4x9yv0le2tw5135jbby1wehjt5].[none:MCC:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D2ACDD0D-88DD-46DB-BEF7-7A9E194D519F}' />
+    </worksheet>
+    <worksheet name='Sheet 11'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{93507330-45AC-41E8-ABB1-96C693E55F02}' />
+    </worksheet>
+    <worksheet name='Simple Counts'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Output_df' name='federated.0j4x9yv0le2tw5135jbby1wehjt5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0j4x9yv0le2tw5135jbby1wehjt5'>
+            <_.fcp.ObjectModelTableType.true...column caption='Output_df.csv' datatype='table' name='[__tableau_internal_object_id__].[Output_df.csv_0BBFD47877024477B7C5537D85B31F06]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Output_df.csv_0BBFD47877024477B7C5537D85B31F06]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Output_df.csv_0BBFD47877024477B7C5537D85B31F06:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.false...column caption='Output_df.csv' datatype='integer' name='[__tableau_internal_object_id__].[Output_df.csv_0BBFD47877024477B7C5537D85B31F06]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0j4x9yv0le2tw5135jbby1wehjt5].[__tableau_internal_object_id__].[cnt:Output_df.csv_0BBFD47877024477B7C5537D85B31F06:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{E0BA695F-6DFF-458E-95A1-AF1FE671F020}' />
+    </worksheet>
+    <worksheet name='TT2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Output_df' name='federated.0j4x9yv0le2tw5135jbby1wehjt5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0j4x9yv0le2tw5135jbby1wehjt5'>
+            <column datatype='integer' name='[Chip Transaction]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Online Transaction]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Swipe Transaction]' role='measure' type='quantitative' />
+            <_.fcp.ObjectModelTableType.false...column caption='Output_df.csv' datatype='integer' name='[__tableau_internal_object_id__].[Output_df.csv_0BBFD47877024477B7C5537D85B31F06]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='Output_df.csv' datatype='table' name='[__tableau_internal_object_id__].[Output_df.csv_0BBFD47877024477B7C5537D85B31F06]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Output_df.csv_0BBFD47877024477B7C5537D85B31F06]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Output_df.csv_0BBFD47877024477B7C5537D85B31F06:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Chip Transaction]' derivation='Sum' name='[sum:Chip Transaction:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Online Transaction]' derivation='Sum' name='[sum:Online Transaction:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Swipe Transaction]' derivation='Sum' name='[sum:Swipe Transaction:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Polygon' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0j4x9yv0le2tw5135jbby1wehjt5].[__tableau_internal_object_id__].[cnt:Output_df.csv_0BBFD47877024477B7C5537D85B31F06:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Polygon' />
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0j4x9yv0le2tw5135jbby1wehjt5].[sum:Chip Transaction:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Polygon' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#8cd17d' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0j4x9yv0le2tw5135jbby1wehjt5].[sum:Swipe Transaction:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Polygon' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f1ce63' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0j4x9yv0le2tw5135jbby1wehjt5].[sum:Online Transaction:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Polygon' />
+          </pane>
+        </panes>
+        <rows>([federated.0j4x9yv0le2tw5135jbby1wehjt5].[__tableau_internal_object_id__].[cnt:Output_df.csv_0BBFD47877024477B7C5537D85B31F06:qk] + ([federated.0j4x9yv0le2tw5135jbby1wehjt5].[sum:Online Transaction:qk] + ([federated.0j4x9yv0le2tw5135jbby1wehjt5].[sum:Swipe Transaction:qk] + [federated.0j4x9yv0le2tw5135jbby1wehjt5].[sum:Chip Transaction:qk])))</rows>
+        <cols>[federated.0j4x9yv0le2tw5135jbby1wehjt5].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{BCC84946-C675-4EA1-9252-4462E374530C}' />
+    </worksheet>
+    <worksheet name='Trxn Type'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Output_df' name='federated.0j4x9yv0le2tw5135jbby1wehjt5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0j4x9yv0le2tw5135jbby1wehjt5'>
+            <column datatype='integer' name='[IsFraud?]' role='measure' type='quantitative' />
+            <_.fcp.ObjectModelTableType.false...column caption='Output_df.csv' datatype='integer' name='[__tableau_internal_object_id__].[Output_df.csv_0BBFD47877024477B7C5537D85B31F06]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='Output_df.csv' datatype='table' name='[__tableau_internal_object_id__].[Output_df.csv_0BBFD47877024477B7C5537D85B31F06]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Output_df.csv_0BBFD47877024477B7C5537D85B31F06]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Output_df.csv_0BBFD47877024477B7C5537D85B31F06:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[IsFraud?]' derivation='Sum' name='[sum:IsFraud?:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0j4x9yv0le2tw5135jbby1wehjt5].[__tableau_internal_object_id__].[cnt:Output_df.csv_0BBFD47877024477B7C5537D85B31F06:qk]' scope='rows' value='# of Transactions' />
+            <format attr='title' class='0' field='[federated.0j4x9yv0le2tw5135jbby1wehjt5].[sum:IsFraud?:qk]' scope='rows' value='Fraud Transaction Count' />
+            <encoding attr='space' class='0' field='[federated.0j4x9yv0le2tw5135jbby1wehjt5].[none:Year:qk]' field-type='quantitative' max='2020' min='2006' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0j4x9yv0le2tw5135jbby1wehjt5].[__tableau_internal_object_id__].[cnt:Output_df.csv_0BBFD47877024477B7C5537D85B31F06:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0j4x9yv0le2tw5135jbby1wehjt5].[sum:IsFraud?:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#e15759' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0j4x9yv0le2tw5135jbby1wehjt5].[__tableau_internal_object_id__].[cnt:Output_df.csv_0BBFD47877024477B7C5537D85B31F06:qk] + [federated.0j4x9yv0le2tw5135jbby1wehjt5].[sum:IsFraud?:qk])</rows>
+        <cols>[federated.0j4x9yv0le2tw5135jbby1wehjt5].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{E8436F41-90AB-4785-B537-37FF71D59AC1}' />
+    </worksheet>
+    <worksheet name='Trxn/Yr'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Output_df' name='federated.0j4x9yv0le2tw5135jbby1wehjt5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0j4x9yv0le2tw5135jbby1wehjt5'>
+            <_.fcp.ObjectModelTableType.false...column caption='Output_df.csv' datatype='integer' name='[__tableau_internal_object_id__].[Output_df.csv_0BBFD47877024477B7C5537D85B31F06]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='Output_df.csv' datatype='table' name='[__tableau_internal_object_id__].[Output_df.csv_0BBFD47877024477B7C5537D85B31F06]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Output_df.csv_0BBFD47877024477B7C5537D85B31F06]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Output_df.csv_0BBFD47877024477B7C5537D85B31F06:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0j4x9yv0le2tw5135jbby1wehjt5].[__tableau_internal_object_id__].[cnt:Output_df.csv_0BBFD47877024477B7C5537D85B31F06:qk]' scope='rows' value='# of Transactions' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>[federated.0j4x9yv0le2tw5135jbby1wehjt5].[__tableau_internal_object_id__].[cnt:Output_df.csv_0BBFD47877024477B7C5537D85B31F06:qk]</rows>
+        <cols>[federated.0j4x9yv0le2tw5135jbby1wehjt5].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{D645CABF-F8D1-449A-82E8-3078B00537BB}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' preset-index='1' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='3' name='Trxn/Yr' w='98400' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='6' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97714' id='5' param='vert' type-v2='layout-flow' w='95734' x='2133' y='1143'>
+                <zone fixed-size='280' h='41143' id='3' is-fixed='true' name='Trxn/Yr' w='95734' x='2133' y='1143'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{F107BC04-1B99-4D41-9820-362E05B6D373}' />
+    </dashboard>
+    <dashboard name='Dashboard 2'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='41875' id='1' is-centered='0' is-scaled='1' param='C:/Users/phili/Google Drive/Sailing/sunfish/2020 MYC Frostbiting/2020-01-18 win by a nose.jpg' type-v2='bitmap' w='50000' x='44600' y='43250' />
+        <zone forceUpdate='' h='30000' id='2' param='https://courses.bootcampspot.com/courses/532/grades' type-v2='web' w='33300' x='1500' y='3500' />
+      </zones>
+      <simple-id uuid='{D3391C5C-CBC2-4184-89B6-8D3A462C2B45}' />
+    </dashboard>
+    <dashboard name='Story 1' type='storyboard'>
+      <style />
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='830'>
+            <zone h='3423' id='3' type-v2='title' w='98426' x='787' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='4253' />
+            <zone h='84440' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='14730'>
+              <flipboard active-id='2' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='First page' captured-sheet='' id='1' />
+                  <story-point caption='second page' captured-sheet='' id='2' />
+                  <story-point captured-sheet='' id='3' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone flipboard-zone-id='5' forceUpdate='true' h='5602' id='6' story-point-id='2' type-v2='text' w='29331' x='29331' y='18154'>
+          <formatted-text>
+            <run>Project Description  what we are doing and why.
+
+</run>
+          </formatted-text>
+        </zone>
+        <zone flipboard-zone-id='5' forceUpdate='true' h='28008' hidden='true' id='7' story-point-id='1' type-v2='text' w='48622' x='22539' y='24689'>
+          <formatted-text>
+            <run>Contents</run>
+            <run fontalignment='0'>
+1.  Title and BS  set the stage
+2. Intro to the project and data set
+3. Info around the data set and how we derived it
+4. SQL discussion
+. description on what we did Python
+.  More info on data now with info on Fraud with Conclusions.
+. Close with Credits and pics. 
+</run>
+          </formatted-text>
+        </zone>
+        <zone flipboard-zone-id='5' forceUpdate='true' h='43568' id='8' story-point-id='2' type-v2='text' w='83563' x='7185' y='26660'>
+          <formatted-text>
+            <run fontalignment='0' fontcolor='#b07aa1' fontname='Consolas,Courier New,monospace' fontsize='15'>We are the Cleptomanics!   We Know FRAUD.   We take it seriously....We take it, LITERALLY. </run>
+            <run fontalignment='0'>Æ&#10;</run>
+            <run fontalignment='0' fontcolor='#b07aa1' fontname='Consolas,Courier New,monospace' fontsize='15'>Æ  </run>
+            <run fontalignment='0'>Æ&#10;</run>
+            <run fontalignment='0' fontcolor='#b07aa1' fontname='Consolas,Courier New,monospace' fontsize='15'>Want to know who is in your pocket.  We have answers.  We have Protection!   We are the sheath that keeps your financial transactions sterile.  Totally clean.  We are the clean machine</run>
+            <run fontalignment='0'>Æ&#10;&#10;</run>
+            <run fontalignment='0' fontcolor='#b07aa1' fontname='Consolas,Courier New,monospace' fontsize='15'>We are here to keep the natural human condition at bay and keep your credit card transactions SAFE!</run>
+            <run fontalignment='0'>Æ&#10;&#10;</run>
+            <run fontalignment='0' fontcolor='#b07aa1' fontname='Consolas,Courier New,monospace' fontsize='15'>You have the chance today to see and invest in the next greatest thing.</run>
+            <run fontalignment='0'>Æ&#10;&#10;</run>
+            <run fontalignment='0' fontcolor='#b07aa1' fontname='Consolas,Courier New,monospace' fontsize='15'>Yes indeed, you too can be on the ground floor of something special, something big, something that will grow as the excitement Peaks.   </run>
+            <run fontalignment='0'>Æ&#10;&#10;</run>
+            <run fontalignment='0' fontcolor='#b07aa1' fontname='Consolas,Courier New,monospace' fontsize='15'>K</run>
+            <run fontalignment='0'>Æ&#10;</run>
+            <run fontalignment='0' fontcolor='#d4d4d4' fontname='Consolas,Courier New,monospace' fontsize='15'>Æ                        </run>
+            <run fontalignment='0'>Æ&#10;</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <simple-id uuid='{0C5114A6-EE80-44D6-9396-C5C0FC977271}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Simple Counts'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D341F5C3-A11F-4BB5-B200-62821A507C58}' />
+    </window>
+    <window class='worksheet' name='Trxn/Yr'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C3BD08B6-F057-49B8-8C41-11A9546C48A0}' />
+    </window>
+    <window class='worksheet' name='Trxn Type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{603C1858-4C76-4509-9687-43265BD8BF03}' />
+    </window>
+    <window class='worksheet' name='TT2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0F0935B0-0662-4BFE-833E-155A546F580C}' />
+    </window>
+    <window class='worksheet' name='Fraud over Time'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1786CF9E-6D0C-4F6B-999C-E9BA61E07F41}' />
+    </window>
+    <window class='worksheet' name='Fraud by Card'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0j4x9yv0le2tw5135jbby1wehjt5].[none:Card:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{17F50DE4-DBE1-4297-9759-16924F465F81}' />
+    </window>
+    <window class='worksheet' name='Fraud Bins'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DF87A0AA-AF73-4F96-AB70-5B98B972194C}' />
+    </window>
+    <window class='worksheet' name='Fraud by Card Type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9C05C339-F6A9-4854-8534-F7382C7440F0}' />
+    </window>
+    <window class='worksheet' name='MCC Fraud'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0j4x9yv0le2tw5135jbby1wehjt5].[sum:IsFraud?:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{00BCB0A2-C333-4D21-BC45-CAA5A315B5EF}' />
+    </window>
+    <window class='worksheet' name='Chip Trxn Type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0j4x9yv0le2tw5135jbby1wehjt5].[none:Calculation_1418915423644798977:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BC0CBA01-E493-41B5-BE11-F6D645FCA02D}' />
+    </window>
+    <window class='worksheet' name='Sheet 11'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FA5F0724-E62D-47F7-A9B2-F2E76ACDD8CD}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Trxn/Yr'>
+          <zoom type='fit-width' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{C31FF562-063D-4F2C-875C-868F61E2C008}' />
+    </window>
+    <window class='dashboard' name='Dashboard 2'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{822951B7-F6C4-4769-8951-05C233184A63}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Story 1'>
+      <viewpoints />
+      <active id='8' />
+      <simple-id uuid='{6B8E79D7-E929-4C4F-A071-0284DA576E95}' />
+    </window>
+  </windows>
+</workbook>
